@@ -1,0 +1,11 @@
+# Restricted or large inputs/results
+data/
+results/
+logs/
+**/weights/
+**/*.pt
+**/*.pth
+**/metrics.csv
+**/__pycache__/
+**/*.pyc
+.ipynb_checkpoints/

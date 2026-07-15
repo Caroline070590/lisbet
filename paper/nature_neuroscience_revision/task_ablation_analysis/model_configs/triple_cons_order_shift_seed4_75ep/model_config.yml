@@ -1,0 +1,39 @@
+backbone:
+  embedding_dim: 32
+  feature_dim: 28
+  hidden_dim: 128
+  max_length: 200
+  num_heads: 4
+  num_layers: 4
+  type: transformer
+input_features:
+  individuals:
+  - resident
+  - intruder
+  keypoints:
+  - nose
+  - left_ear
+  - right_ear
+  - neck
+  - left_hip
+  - right_hip
+  - tail
+  space:
+  - x
+  - y
+model_id: triple_cons_order_shift_seed4_75ep
+out_heads:
+  cons:
+    hidden_dim: 128
+    input_dim: 32
+    num_classes: 1
+  order:
+    hidden_dim: 128
+    input_dim: 32
+    num_classes: 1
+  shift:
+    hidden_dim: 128
+    input_dim: 32
+    num_classes: 1
+window_offset: 0
+window_size: 200

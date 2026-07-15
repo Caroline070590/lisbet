@@ -1,0 +1,2 @@
+experiment_id,task_combinations,seeds_per_combination,matrix_runs,model_configs,completed_log_records,window_size_frames,epochs,batch_size,learning_rate,python_version
+task_full_combinations_w200_75ep_train1600,15,5,75,75,75,200,75,32,0.0001,Python 3.10.20
