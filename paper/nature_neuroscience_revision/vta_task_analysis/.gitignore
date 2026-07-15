@@ -1,0 +1,22 @@
+# Restricted data and derived row-level tables
+*.mat
+*.h5
+*.hdf5
+*.npy
+*.npz
+figure6_all_trials_event_table.csv
+figure6_all_trials_event_neuron_long_valid.csv
+trial_status_summary.csv
+long_table_with_velocity_distance_residuals.csv
+
+# Local outputs
+outputs/
+results/
+robust_residual_analysis*/
+figures_lisbet_style*/
+
+# Python/Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store

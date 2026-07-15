@@ -1,0 +1,26 @@
+table,variable,level,type,description,public_release
+raw_features,timing,frame,float,Frame timestamp used to estimate frame rate,restricted
+raw_features,velocity,frame,float,Velocity descriptor used in the baseline model,restricted
+raw_features,distance,frame,float,Inter-mouse distance descriptor used in the baseline model,restricted
+raw_features,angle,frame,float,Angular behavioral descriptor used in the extended control model,restricted
+raw_features,neuron_*,frame,float,Recorded VTA-pDA unit activity columns,restricted
+raw_predictions,Action_*,frame,numeric,LISBET/HMM prototype prediction columns,restricted
+event_table,trial_id,trial,string,Original trial identifier,restricted
+event_table,condition,trial,string,Experimental condition,aggregate_only
+event_table,global_event_id,event,integer,Unique event identifier within the combined analysis table,restricted
+event_table,prototype_id,event,integer,LISBET prototype assigned to a continuous event,restricted
+event_table,duration_s,event,float,Prototype-event duration in seconds,restricted
+event_table,include_methods_duration_filter,event,boolean,Whether event duration was between 0.2 and 2.0 seconds inclusive,restricted
+event_unit_table,unit_id,event-unit,string,Recorded unit identifier constructed from trial and neuron column,restricted
+event_unit_table,neural_activity,event-unit,float,Mean VTA-pDA activity during the prototype event,restricted
+event_unit_table,neural_z,event-unit,float,Within-unit standardized neural activity,restricted
+event_unit_table,velocity_mean,event,float,Mean velocity during the prototype event,restricted
+event_unit_table,distance_mean,event,float,Mean inter-mouse distance during the prototype event,restricted
+event_unit_table,angle_mean,event,float,Mean angular descriptor during the prototype event,restricted
+event_unit_table,velocity_z,event-unit,float,Within-trial standardized event velocity,restricted
+event_unit_table,distance_z,event-unit,float,Within-trial standardized event distance,restricted
+event_unit_table,angle_z,event-unit,float,Within-trial standardized event angle,restricted
+event_unit_table,prototype_id_original,event-unit,integer,Prototype identifier retained before minimum-count filtering,restricted
+metadata,n_trials,dataset,integer,Number of trials included in Condition_A,public
+metadata,n_units,dataset,integer,Number of recorded units represented in the model,public
+metadata,n_event_unit_observations,dataset,integer,Number of observations used in the model,public

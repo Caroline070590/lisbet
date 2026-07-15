@@ -1,0 +1,2 @@
+condition,n_trials,n_units,n_prototype_events_before_duration_filter,n_prototype_events_after_duration_filter,n_event_unit_observations,n_retained_prototypes,min_event_duration_s,max_event_duration_s
+Condition_A,101,134,62547,22797,30008,7,0.2,2.0
