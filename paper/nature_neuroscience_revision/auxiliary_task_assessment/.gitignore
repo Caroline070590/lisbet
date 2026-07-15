@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+embeddings/
+raw_data/
